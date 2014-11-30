@@ -1,6 +1,117 @@
 
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@import url(http://fonts.googleapis.com/css?family=Anton);
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif);
+
+.nameofthegame h1 {
+    background-size: 100% 100%;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.nameofthegame p {
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+}
+
+body {
+    color: white;
+    background-image: url('../img/Background-Websites1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    background-image-opacity: 50%;
+}
+
+#game-stuff-modal h4 {
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    color: blue;
+}
+
+#game-stuff-modal {
+    text-align: left;
+    color: black;
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+}
+
+#elapsed-seconds {
+    font-family: 'Anton', sans-serif, cursive;
+    font-size: 30px;
+    margin-left: 15%;
+}
+
+#clickstart {
+    font-family: 'Lato', 'Helvetica-Neue', sans-serif;
+    font-size: 20px;
+}
+
+#startgame h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    float: center;
+    text-align: right;
+    margin-right: 17%;
+    text-decoration: underline;
+}
+
+#statistics h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    text-align: right;
+    margin-right: 17%;
+}
+
+button.btn-default {
+    margin-left: 12%;;
+    cursor: pointer;
+    color: #C1DEF0 ;
+    font-size: 20px;
+    font-family: 'Lato', 'Helvetica-Neue', sans-serif;
+    background-color: #004859;
+}
+
+#game-board {
+    float: left;
+    margin-left: 10%;
+}
+
 #game-board img {
-    width: 200px;
-    height: 200px;
-    margin-right: 5px;
+    width: 150px;
+    height: 150px;
+    margin-left: 40px;
+    cursor: pointer;
+    padding: 0.25em;
+    border-radius: 20%;
+    opacity: 0.85;
+}
+
+#footer {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: right;
+    margin-right: 10%;
+    float: right;
+}
+
+#congrats-modal h4 {
+    color: black;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+    background-color: #7A8F67;
+}
+#congrats-modal {
+    color: blue;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Noto Serif', serif;
 }

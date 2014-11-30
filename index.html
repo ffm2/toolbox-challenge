@@ -1,18 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head lang="en">
-        <meta charset="UTF-8">
-        <title>Memory!</title>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Memory</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="icon" href="img/brain icon.jpg">
+</head>
+<body>
+<main>
+    <section>
+        <header class="nameofthegame">
+            <strong><b><h1>The Memory Game</h1></b></strong>
+            <p class="lead">Find all the matching pairs of cards.</p>
+        </header>
+    </section>
 
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <h1>Memory</h1>
-        <p id="elapsed-seconds"></p>
-        <div id="game-board"></div>
+    <section id='clickstart'>
+        <br><br><button type="button" id="startgamebutton" class="btn
+				btn-default">Start a New Game</button>
+    </section>
 
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
-        <script src="js/app.js"></script>
-    </body>
+    <section id="thewholegame">
+        <p id="elapsed-seconds">Elapsed Time: 0 seconds</p>
+        <div id="game-board"</div>
+    </section>
+
+    <section id="startgame">
+        <h1>Score-Board</h1>
+
+        <div id="statistics">
+            <h2 class="stat1" id="missed">Missed: 0</h2>
+
+            <h2 class="stat2" id="remaining">Remaining: 0</h2>
+
+            <h2 class="stat3" id="matches">Matches: 0</h2>
+        </div>
+    </section>
+    <footer id="footer">
+        <p>&copy; 2014, Fardos Mohamed University of Washington</p>
+    </footer>
+</main>
+<div class="modal fade" id="congrats-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Congratulations!</h4>
+            </div>
+            <div class="modal-body">
+                <p>Congratulations! You found the Matching pairs and won! Give it a second try</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="play-again-button">Play Again</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+</body>
 </html>
